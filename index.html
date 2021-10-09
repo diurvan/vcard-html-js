@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="vcard.js"></script>
+    <link rel="stylesheet" href="style.css?ver=34414">
+    <link href="https://fonts.googleapis.com/css2" rel="stylesheet">
+	
+	<script>
+		$( document ).ready(function() {
+	  
+			$('#vcard').click( function(e) { 
+				GenerarVcard(); 
+				var elemremove1 = $('#vcardcanvas');
+				elemremove1.remove();
+			} );
+			
+		});
+	</script>
+	
+	
+  </head>
+  <body>
+      <div id="pantalla1" class="contenedor">
+		<h1>GENERADOR VCARD</h1>
+        <div class="contenedor__global" >
+		
+          <div class="contenedor1__logo">
+
+
+            <div class="redes">
+              <ul>
+                <li>
+                  <a id="vcard" href="#"><i class="fas fa-user"></i></a>
+                </li>
+				<li>
+				  <img id="logo_imagen" src="./img/logo.png" alt="">
+                </li>
+              </ul>
+            </div>		
+
+		
+			<div class="imagenPersona">
+				<img id="foto_imagen" src="./img/foto.png" alt="">
+			</div>
+
+			<div class="informacionContacto">
+				<div class="informacion">
+				  <h2 class="nombre">IVAN</h2>
+				  <h3 class="apellido">TAPIA</h3>
+				</div>
+				<ul>
+				  <li>
+					<a id="correo" href="#">CORREO@CORREO.COM</a>
+				  </li>
+				  <li>
+					<a id="telefono1" href="#">TELEFONO1</a>
+				  </li>
+				  <li>
+					<a id="telefono2" href="#">TELEFONO2</a>
+				  </li>
+				  <li>
+					<a id="direccion" href="#">DIRECCION</a>
+				  </li>
+				  <li>
+					<a id="area" href="#">GERENCIA</a>
+				  </li>
+				  <li>
+					<a id="puesto" href="#">ASISTENTE</a>
+				  </li>
+				  
+				  <li>
+					<a id="empresa" href="#">EMPRESA</a>
+				  </li>
+				  <li>
+					<a id="web" href="">URL WEB</a>
+				  </li>
+				</ul>
+			</div>
+		  
+			<div id="vcardcanvas" style="display:none">
+			</div>
+		  
+          </div>
+          <div class="footer">
+            <div class="footer__link">
+              <a href="#">https://diurvanconsultores.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
